@@ -4,22 +4,63 @@
 <title>My Flask App Page</title>
 </head>
 <body>
-{% if nLC %}
-<p>Hello {{nLC}} </p>
-{% else %}
-<p>Hello anonymous person </p>
-{% endif %}
 
-<p>Let's keep in touch </p>
-	<div id="contact-form">
-		<form method="post" action="/signup">
-			<label for="email">Email address:</label>
-			<input type="email" id="email" name="email"
-required="required">
-			<input type="submit" value="Submit" id="submitbutton">
-		</form>
-	</div>
+<p>Last Christmas was played: {{nLC}} times </p>
 
-</body>
+
+<p>Jingle Bells was played: {{nJB}} times </p>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.circle {
+  height: 100px;
+  width: 100px;
+  background-color: #237;
+  border-radius: 50%;
+
+  	background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+
+    font: 32px Arial, sans-serif;
+}
+</style>
+</head>
+<body>
+
+<h2>Circle CSS</h2>
+<div class="circle">{{nLC}}</div>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("file:///C:Users/nasta/Documents/Coding_for_girls/project/background2.png");
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<div class="bg"></div>
+
 
 </html>
